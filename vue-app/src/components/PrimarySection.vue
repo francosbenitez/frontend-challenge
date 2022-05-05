@@ -5,23 +5,24 @@
       @on-moving-to-left="receiveBtnLeftAction"
       @on-moving-to-right="receiveBtnRightAction"
     />
-    <PrimarySectionDescription />
+    <PrimarySectionText :title="title" />
   </section>
 </template>
 
 <script>
 import PrimarySectionImage from "./PrimarySectionImage.vue";
 import PrimarySectionButtons from "./PrimarySectionButtons.vue";
-import PrimarySectionDescription from "./PrimarySectionDescription.vue";
+import PrimarySectionText from "./PrimarySectionText.vue";
 
 export default {
   components: {
     PrimarySectionImage,
-    PrimarySectionDescription,
+    PrimarySectionText,
     PrimarySectionButtons,
   },
   props: {
     url: String,
+    title: String,
   },
   methods: {
     receiveBtnRightAction() {

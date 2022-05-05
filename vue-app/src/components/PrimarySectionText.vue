@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Elije tu próximo destino</h1>
+    <h1>{{ title }}</h1>
     <p>
       Lorem Ipsum has been the industry’s standard dummy text ever since the
       1500s, when an unknown printer took a galley of type and scrambled it to
@@ -9,9 +9,9 @@
       unchanged. It was pop
     </p>
     <div>
-      <img src="../assets/images/facebook.svg" />
-      <img src="../assets/images/linkedin.svg" />
-      <img src="../assets/images/twitter.svg" />
+      <img src="/assets/images/facebook.svg" />
+      <img src="/assets/images/linkedin.svg" />
+      <img src="/assets/images/twitter.svg" />
     </div>
   </div>
 </template>
@@ -20,7 +20,6 @@
 export default {
   props: {
     title: String,
-    description: String,
   },
 };
 </script>

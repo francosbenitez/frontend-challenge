@@ -4,6 +4,7 @@
       @on-moving-to-left="receiveBtnLeftAction"
       @on-moving-to-right="receiveBtnRightAction"
       :url="url"
+      :title="title"
     />
   </div>
 </template>
@@ -20,8 +21,7 @@ export default {
   data() {
     return {
       url: "/assets/images/cover-0.jpg",
-      title: "",
-      description: "",
+      title: "Crea un impacto positivo",
       step: 0,
     };
   },
@@ -40,7 +40,14 @@ export default {
         "/assets/images/cover-2.jpg",
       ];
 
+      const titles = [
+        "Crea un impacto positivo",
+        "Elije tu próximo destino",
+        "Encuentra la inspiración",
+      ];
+
       this.url = urls[this.step];
+      this.title = titles[this.step];
       ///////////////////////////
 
       console.log("this.step", this.step);
@@ -59,7 +66,14 @@ export default {
         "/assets/images/cover-2.jpg",
       ];
 
+      const titles = [
+        "Crea un impacto positivo",
+        "Elije tu próximo destino",
+        "Encuentra la inspiración",
+      ];
+
       this.url = urls[this.step];
+      this.title = titles[this.step];
       ///////////////////////////
 
       console.log("this.step", this.step);
