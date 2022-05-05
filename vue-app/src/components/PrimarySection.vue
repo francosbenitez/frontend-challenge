@@ -1,5 +1,5 @@
 <template>
-  <section class="section__primary">
+  <section class="section-primary">
     <PrimarySectionImage :url="url" />
     <PrimarySectionButtons
       @on-moving-to-left="receiveBtnLeftAction"
@@ -35,4 +35,12 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+$color__primary: #335a39;
+$color__white: #ffffff;
+
+.section-primary {
+  background-color: $color__primary;
+  color: $color__white;
+}
+</style>

@@ -18,7 +18,7 @@ export default {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
   height: 482px;
-  width: 604px;
 }
 </style>

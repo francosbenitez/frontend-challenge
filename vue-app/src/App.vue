@@ -1,22 +1,27 @@
 <template>
   <div id="app">
-    <PrimarySection
-      @on-moving-to-left="receiveBtnLeftAction"
-      @on-moving-to-right="receiveBtnRightAction"
-      :url="url"
-      :title="title"
-    />
+    <div class="sections-wrapper">
+      <PrimarySection
+        @on-moving-to-left="receiveBtnLeftAction"
+        @on-moving-to-right="receiveBtnRightAction"
+        :url="url"
+        :title="title"
+      />
+      <SecondarySection />
+    </div>
   </div>
 </template>
 
 <script>
 import PrimarySection from "./components/PrimarySection.vue";
+import SecondarySection from "./components/SecondarySection.vue";
 import "./assets/scss/default.scss";
 
 export default {
   name: "App",
   components: {
     PrimarySection,
+    SecondarySection,
   },
   data() {
     return {
@@ -81,3 +86,15 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+#app {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.sections-wrapper {
+  min-height: 100vh;
+}
+</style>
