@@ -22,8 +22,8 @@ export default {
 $color__white: #ffffff;
 
 .btn {
-  position: absolute;
-  right: 5%;
+  position: relative;
+  left: 75%;
 }
 
 button {
@@ -49,6 +49,8 @@ button {
   width: 50px;
   height: 50px;
   background-color: $color__white;
+  position: absolute;
+  bottom: 50px;
 
   &:before {
     width: 13px;
