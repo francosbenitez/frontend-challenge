@@ -1,28 +1,11 @@
 <template>
   <section>
     <PrimarySectionImage :url="url" />
-    <PrimarySectionButtons />
+    <PrimarySectionButtons
+      @on-moving-to-left="receiveBtnLeftAction"
+      @on-moving-to-right="receiveBtnRightAction"
+    />
     <PrimarySectionDescription />
-
-    <!-- <transition name="fade" mode="out-in">
-        <span key="1" class="float-right align-middle" v-if="!isOpenCreatives">
-          <img class="w-h-10" src="/icons/filter_arrow_icon_gray.svg" alt="" />
-        </span>
-        <span key="2" class="float-right align-middle" v-else>
-          <img class="w-h-10" src="/icons/filter_arrow_icon_top.svg" alt="" />
-        </span>
-      </transition> -->
-
-    <!-- <li role="presentation">
-          <a href="#" @click="currentView='primary-section-image'">Manage Posts</a>
-        </li>
-        <li role="presentation">
-          <a href="#" @click="currentView='primary-section-description'">Create Post</a>
-        </li>
-
-    <div>
-      <component :is="currentView" transition="fade" transition-mode="out-in"></component>
-    </div> -->
   </section>
 </template>
 
@@ -37,12 +20,16 @@ export default {
     PrimarySectionDescription,
     PrimarySectionButtons,
   },
-  data() {
-    return {
-      url: "",
-      title: "",
-      description: "",
-    };
+  props: {
+    url: String,
+  },
+  methods: {
+    receiveBtnRightAction() {
+      this.$emit("on-moving-to-right");
+    },
+    receiveBtnLeftAction() {
+      this.$emit("on-moving-to-left");
+    },
   },
 };
 </script>

@@ -1,7 +1,8 @@
 <template>
-  <div class="hero-image">
-    <img src="../assets/images/cover-1.jpg" />
-  </div>
+  <div
+    class="hero-image"
+    :style="{ backgroundImage: 'url(' + url + ')' }"
+  ></div>
 </template>
 
 <script>
@@ -13,8 +14,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.hero-image img {
-  max-height: 482px;
-  max-width: 604px;
+.hero-image {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 482px;
+  width: 604px;
 }
 </style>
