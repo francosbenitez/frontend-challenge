@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="section__primary">
     <PrimarySectionImage :url="url" />
     <PrimarySectionButtons
       @on-moving-to-left="receiveBtnLeftAction"
@@ -35,4 +35,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss"></style>

@@ -19,6 +19,8 @@ export default {
 </script>
 
 <style lang="scss">
+$color__white: #ffffff;
+
 .btn {
   position: absolute;
   right: 5%;
@@ -31,11 +33,11 @@ button {
 .btn--left {
   width: 50px;
   height: 50px;
-  background-color: transparent;
+  background-color: $color__white;
 
   &:before {
-    width: 50px;
-    height: 50px;
+    width: 13px;
+    height: 22px;
     content: "<";
     background-repeat: no-repeat;
     background-size: cover;
@@ -46,11 +48,11 @@ button {
 .btn--right {
   width: 50px;
   height: 50px;
-  background-color: transparent;
+  background-color: $color__white;
 
   &:before {
-    width: 50px;
-    height: 50px;
+    width: 13px;
+    height: 22px;
     content: ">";
     background-repeat: no-repeat;
     background-size: cover;
