@@ -20,10 +20,18 @@ export default {
 
 <style lang="scss">
 $color__white: #ffffff;
+$breakpoint--md: 768px;
 
 .btn {
   position: relative;
   left: 75%;
+
+  @media screen and (min-width: $breakpoint--md) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 
   button {
     cursor: pointer;

@@ -1,17 +1,22 @@
 <template>
-  <Transition name="fade">
-    <div :key="url">
-      <div class="hero-image" :style="{ backgroundImage: 'url(' + url + ')' }">
-        <div class="hero-image__menu">
-          <div class="hero-image__wrapper">
-            <div class="hero-image__line--1"></div>
-            <div class="hero-image__line--2"></div>
-            <div class="hero-image__line--3"></div>
+  <div class="col-6">
+    <Transition name="fade">
+      <div :key="url">
+        <div
+          class="hero-image"
+          :style="{ backgroundImage: 'url(' + url + ')' }"
+        >
+          <div class="hero-image__menu">
+            <div class="hero-image__wrapper">
+              <div class="hero-image__line--1"></div>
+              <div class="hero-image__line--2"></div>
+              <div class="hero-image__line--3"></div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </Transition>
+    </Transition>
+  </div>
 </template>
 
 <script>
@@ -25,6 +30,18 @@ export default {
 <style lang="scss">
 $color__primary: #335a39;
 $color__white: #ffffff;
+$breakpoint--md: 768px;
+
+.col-6 {
+  @media screen and (min-width: $breakpoint--md) {
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    width: 100%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
 
 .hero-image {
   background-position: 50%;

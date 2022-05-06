@@ -1,18 +1,20 @@
 <template>
-  <div class="section-primary__text">
-    <h1 class="section-primary__title">{{ title }}</h1>
-    <hr class="section-primary__line" />
-    <p class="section-primary__description">
-      Lorem Ipsum has been the industry’s standard dummy text ever since the
-      1500s, when an unknown printer took a galley of type and scrambled it to
-      make a type specimen book. It has survived not only five centuries, but
-      also the leap into electronic typesetting, remaining essentially
-      unchanged. It was pop
-    </p>
-    <div class="section-primary__networks">
-      <img src="/assets/icons/facebook.svg" />
-      <img src="/assets/icons/linkedin.svg" />
-      <img src="/assets/icons/twitter.svg" />
+  <div class="col-6">
+    <div class="section-primary__text">
+      <h1 class="section-primary__title">{{ title }}</h1>
+      <hr class="section-primary__line" />
+      <p class="section-primary__description">
+        Lorem Ipsum has been the industry’s standard dummy text ever since the
+        1500s, when an unknown printer took a galley of type and scrambled it to
+        make a type specimen book. It has survived not only five centuries, but
+        also the leap into electronic typesetting, remaining essentially
+        unchanged. It was pop
+      </p>
+      <div class="section-primary__networks">
+        <img src="/assets/icons/facebook.svg" />
+        <img src="/assets/icons/linkedin.svg" />
+        <img src="/assets/icons/twitter.svg" />
+      </div>
     </div>
   </div>
 </template>
@@ -27,6 +29,18 @@ export default {
 
 <style lang="scss">
 $color__white: #ffffff;
+$breakpoint--md: 768px;
+
+.col-6 {
+  @media screen and (min-width: $breakpoint--md) {
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    width: 100%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
 
 .section-primary__text {
   margin: 0 auto;
