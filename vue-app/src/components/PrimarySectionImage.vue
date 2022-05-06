@@ -85,4 +85,7 @@ $color__white: #ffffff;
 .fade-leave-to {
   opacity: 0;
 }
+.fade-leave-active {
+  position: absolute;
+}
 </style>
