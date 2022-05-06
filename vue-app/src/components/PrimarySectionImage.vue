@@ -1,13 +1,17 @@
 <template>
-  <div class="hero-image" :style="{ backgroundImage: 'url(' + url + ')' }">
-    <div class="hero-image__menu">
-      <div class="hero-image__wrapper">
-        <div class="hero-image__line--1"></div>
-        <div class="hero-image__line--2"></div>
-        <div class="hero-image__line--3"></div>
+  <Transition name="fade">
+    <div :key="url">
+      <div class="hero-image" :style="{ backgroundImage: 'url(' + url + ')' }">
+        <div class="hero-image__menu">
+          <div class="hero-image__wrapper">
+            <div class="hero-image__line--1"></div>
+            <div class="hero-image__line--2"></div>
+            <div class="hero-image__line--3"></div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  </Transition>
 </template>
 
 <script>
@@ -71,5 +75,14 @@ $color__white: #ffffff;
       }
     }
   }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.8s ease-out;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
