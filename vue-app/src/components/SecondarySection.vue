@@ -40,9 +40,11 @@ $color__primary: #335a39;
     height: 86px;
     width: 330px;
     margin: 0 auto;
+    margin-top: 49px;
 
     .section-secondary__title--special {
       letter-spacing: 7.4px;
+      float: right;
     }
   }
 
@@ -51,28 +53,28 @@ $color__primary: #335a39;
 
     .section-secondary__img {
       margin: 0 auto;
-      width: 350px;
-      height: 269px;
-      background-image: url("/assets/images/mountains.jpg");
+      width: 265px;
+      height: 450px;
+      background-image: url("/assets/images/green.jpg");
       background-position: 50%;
       background-repeat: no-repeat;
       background-size: cover;
       position: relative;
+      margin-top: 38px;
+      margin-bottom: 66.86px;
 
       &:before {
         content: "";
-        background-image: url("/assets/images/green.jpg");
+        width: 350px;
+        height: 269px;
+        background-image: url("/assets/images/mountains.jpg");
         background-position: 50%;
         background-repeat: no-repeat;
         background-size: cover;
-        width: 265px;
-        /* padding: 200px; */
         position: absolute;
         top: 50%;
         left: 50%;
-        z-index: -1;
         transform: translate(-50%, -50%);
-        height: 450px;
       }
     }
   }
@@ -83,13 +85,16 @@ $color__primary: #335a39;
 
     .section-secondary--grid {
       display: grid;
-      grid-template-columns: 1fr 3fr;
+      grid-template-columns: 81.2px 256px;
+      padding-bottom: 55px;
 
       .section-secondary__subtitle {
         line-height: 45px;
         font-family: "Poppins Bold";
         font-size: 18px;
         color: $color__primary;
+        margin-top: 13.14px;
+        margin-bottom: 10px;
       }
 
       .section-secondary__subtitle--p {
@@ -97,6 +102,7 @@ $color__primary: #335a39;
         font-family: "Poppins Regular";
         font-size: 16px;
         color: $color__primary;
+        margin: 0;
       }
     }
   }
