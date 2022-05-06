@@ -4,20 +4,24 @@
       Hay un mundo<br />
       <span class="section-secondary__title--special"> ENORME</span>
     </h2>
-    <div class="section-secondary__images"></div>
+    <div class="section-secondary__images">
+      <div class="section-secondary__img" />
+    </div>
     <div class="section-secondary__networks">
-      <div>
-        <img src="/assets/images/icon-0.svg" />
+      <div class="section-secondary--grid">
+        <img src="/assets/icons/world.svg" />
         <div>
-          <h3>Unforgettable experiences</h3>
-          <p>Creating your trip is entirely collaborative and our Travel</p>
+          <h3 class="section-secondary__subtitle">Unforgettable experiences</h3>
+          <p class="section-secondary__subtitle--p">
+            Creating your trip is entirely collaborative and our Travel
+          </p>
         </div>
-      </div>
-      <div>
-        <img src="/assets/images/icon-1.svg" />
+        <img src="/assets/icons/rudder.svg" />
         <div>
-          <h3>Unforgettable experiences</h3>
-          <p>Creating your trip is entirely collaborative and our Travel</p>
+          <h3 class="section-secondary__subtitle">Unforgettable experiences</h3>
+          <p class="section-secondary__subtitle--p">
+            Creating your trip is entirely collaborative and our Travel
+          </p>
         </div>
       </div>
     </div>
@@ -42,9 +46,59 @@ $color__primary: #335a39;
     }
   }
 
+  .section-secondary__images {
+    /* text-align: center; */
+
+    .section-secondary__img {
+      margin: 0 auto;
+      width: 350px;
+      height: 269px;
+      background-image: url("/assets/images/mountains.jpg");
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+
+      &:before {
+        content: "";
+        background-image: url("/assets/images/green.jpg");
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 265px;
+        /* padding: 200px; */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        height: 450px;
+      }
+    }
+  }
+
   .section-secondary__networks {
     margin: 0 auto;
     width: 330px;
+
+    .section-secondary--grid {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+
+      .section-secondary__subtitle {
+        line-height: 45px;
+        font-family: "Poppins Bold";
+        font-size: 18px;
+        color: $color__primary;
+      }
+
+      .section-secondary__subtitle--p {
+        line-height: 32px;
+        font-family: "Poppins Regular";
+        font-size: 16px;
+        color: $color__primary;
+      }
+    }
   }
 }
 </style>
