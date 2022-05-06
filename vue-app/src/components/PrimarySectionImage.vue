@@ -43,7 +43,8 @@ $color__white: #ffffff;
       text-align: center;
 
       & > div {
-        margin-top: 6.5px;
+        /* margin-top: 6.42px; */
+        margin-top: 3.21px;
       }
 
       .hero-image__line--1,
@@ -52,7 +53,7 @@ $color__white: #ffffff;
         left: 49px;
         width: 19px;
         height: 0px;
-        border: 3px solid #ffffff;
+        border: 1.5px solid #ffffff;
         opacity: 1;
         margin-right: auto;
         margin-left: auto;
@@ -63,7 +64,7 @@ $color__white: #ffffff;
         left: 42px;
         width: 32px;
         height: 0px;
-        border: 3px solid #ffffff;
+        border: 1.5px solid #ffffff;
         opacity: 1;
         margin-right: auto;
         margin-left: auto;

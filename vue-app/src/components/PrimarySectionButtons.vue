@@ -33,14 +33,21 @@ $color__white: #ffffff;
   .btn--left {
     width: 50px;
     height: 50px;
+    position: relative;
     background-color: $color__white;
+    padding: 13.04px 18px 15.05px 18.07px;
 
     &:before {
-      width: 13px;
-      height: 22px;
-      content: "<";
+      width: 13.29px;
+      height: 21.91px;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url("/assets/icons/chevron-left.svg");
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
       background-position: 50%;
     }
   }
@@ -49,15 +56,21 @@ $color__white: #ffffff;
     width: 50px;
     height: 50px;
     background-color: $color__white;
-    position: absolute;
+    position: relative;
     bottom: 50px;
+    padding: 13.04px 18px 15.05px 18.07px;
 
     &:before {
-      width: 13px;
-      height: 22px;
-      content: ">";
+      width: 13.29px;
+      height: 21.91px;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url("/assets/icons/chevron-right.svg");
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
       background-position: 50%;
     }
   }
