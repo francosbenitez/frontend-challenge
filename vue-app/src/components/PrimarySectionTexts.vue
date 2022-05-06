@@ -35,6 +35,7 @@ $color__white: #ffffff;
 
   .section-primary__title {
     font-family: "Poppins Black";
+    margin-top: 22.1px;
     font-size: 35px;
     line-height: 53px;
     margin-bottom: 12.41px;
@@ -52,6 +53,7 @@ $color__white: #ffffff;
   }
 
   .section-primary__networks {
+    margin-top: 33.75px;
     img {
       margin-right: 12px;
     }
