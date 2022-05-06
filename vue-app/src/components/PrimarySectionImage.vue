@@ -1,5 +1,5 @@
 <template>
-  <div class="col-6">
+  <div class="col-6-image">
     <Transition name="fade">
       <div :key="url">
         <div
@@ -32,7 +32,7 @@ $color__primary: #335a39;
 $color__white: #ffffff;
 $breakpoint--md: 768px;
 
-.col-6 {
+.col-6-image {
   @media screen and (min-width: $breakpoint--md) {
     padding-left: 15px;
     padding-right: 15px;
@@ -40,6 +40,7 @@ $breakpoint--md: 768px;
     width: 100%;
     flex: 0 0 50%;
     max-width: 50%;
+    order: 2;
   }
 }
 
@@ -50,13 +51,26 @@ $breakpoint--md: 768px;
   width: 100%;
   height: 482px;
 
+  @media screen and (min-width: $breakpoint--md) {
+    height: 761px;
+  }
+
   .hero-image__menu {
-    margin: 3rem 0 0 3rem;
+    /* margin: 3rem 0 0 3rem; */
+    top: 3rem;
     width: 57px;
     height: 57px;
     background-color: $color__primary;
     position: absolute;
     display: table;
+
+    @media screen and (max-width: $breakpoint--md) {
+      left: 3rem;
+    }
+
+    @media screen and (min-width: $breakpoint--md) {
+      right: 3rem;
+    }
 
     .hero-image__wrapper {
       display: table-cell;
