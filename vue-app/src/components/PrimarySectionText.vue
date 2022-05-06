@@ -1,8 +1,8 @@
 <template>
   <div class="section-primary__text">
-    <h1>{{ title }}</h1>
+    <h1 class="section-primary__title">{{ title }}</h1>
     <hr class="section-primary__line" />
-    <p>
+    <p class="section-primary__description">
       Lorem Ipsum has been the industry’s standard dummy text ever since the
       1500s, when an unknown printer took a galley of type and scrambled it to
       make a type specimen book. It has survived not only five centuries, but
@@ -28,16 +28,33 @@ export default {
 <style lang="scss">
 $color__white: #ffffff;
 
-.section-primary__line {
-  border: 1px solid $color__white;
-}
-
 .section-primary__text {
   margin: 0 auto;
   width: 330px;
-}
+  height: 668px;
 
-.section-primary__networks img {
-  margin-right: 12px;
+  .section-primary__title {
+    font-family: "Poppins Black";
+    font-size: 35px;
+    line-height: 53px;
+    margin-bottom: 12.41px;
+  }
+
+  .section-primary__line {
+    border-top: 5px solid $color__white;
+    margin-bottom: 26.59px;
+  }
+
+  .section-primary__description {
+    font-family: "Poppins Regular";
+    font-size: 16px;
+    line-height: 45px;
+  }
+
+  .section-primary__networks {
+    img {
+      margin-right: 12px;
+    }
+  }
 }
 </style>

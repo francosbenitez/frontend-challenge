@@ -1,37 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap");
+@import "variables";
+@import "fonts";
+@import "typography";
 
 html,
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-}
-
-// Breakpoints
-$breakpoint--sm: 576px;
-$breakpoint--md: 768px;
-$breakpoint--lg: 992px;
-$breakpoint--xl: 1200px;
-
-// Fonts
-@font-face {
-  font-family: "Poppins Black";
-  src: url("../fonts/Poppins-Black.woff2") format("woff2"),
-    url("../fonts/Poppins-Black.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Poppins Regular";
-  src: url("../fonts/Poppins-Regular.woff2") format("woff2"),
-    url("../fonts/Poppins-Regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Poppins Bold";
-  src: url("../fonts/Poppins-Bold.woff2") format("woff2"),
-    url("../fonts/Poppins-Bold.woff") format("woff");
 }

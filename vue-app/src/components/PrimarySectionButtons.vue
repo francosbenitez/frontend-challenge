@@ -24,41 +24,42 @@ $color__white: #ffffff;
 .btn {
   position: relative;
   left: 75%;
-}
 
-button {
-  cursor: pointer;
-}
-
-.btn--left {
-  width: 50px;
-  height: 50px;
-  background-color: $color__white;
-
-  &:before {
-    width: 13px;
-    height: 22px;
-    content: "<";
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
+  button {
+    cursor: pointer;
+    border: none;
   }
-}
 
-.btn--right {
-  width: 50px;
-  height: 50px;
-  background-color: $color__white;
-  position: absolute;
-  bottom: 50px;
+  .btn--left {
+    width: 50px;
+    height: 50px;
+    background-color: $color__white;
 
-  &:before {
-    width: 13px;
-    height: 22px;
-    content: ">";
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
+    &:before {
+      width: 13px;
+      height: 22px;
+      content: "<";
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50%;
+    }
+  }
+
+  .btn--right {
+    width: 50px;
+    height: 50px;
+    background-color: $color__white;
+    position: absolute;
+    bottom: 50px;
+
+    &:before {
+      width: 13px;
+      height: 22px;
+      content: ">";
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50%;
+    }
   }
 }
 </style>

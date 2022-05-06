@@ -1,0 +1,7 @@
+$color__primary: green;
+$color__white: #ffffff;
+
+:root {
+  $color__primary: green;
+  --color__primary: #{$color__primary};
+}

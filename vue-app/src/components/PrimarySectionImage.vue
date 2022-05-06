@@ -18,7 +18,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 $color__primary: #335a39;
 $color__white: #ffffff;
 
@@ -30,7 +30,7 @@ $color__white: #ffffff;
   height: 482px;
 
   .hero-image__menu {
-    margin: 10px 0 0 10px;
+    margin: 3rem 0 0 3rem;
     width: 57px;
     height: 57px;
     background-color: $color__primary;

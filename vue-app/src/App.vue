@@ -15,7 +15,6 @@
 <script>
 import PrimarySection from "./components/PrimarySection.vue";
 import SecondarySection from "./components/SecondarySection.vue";
-import "./assets/scss/default.scss";
 
 export default {
   name: "App",
@@ -87,7 +86,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 #app {
   height: 100vh;
   position: relative;
