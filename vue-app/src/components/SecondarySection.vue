@@ -70,11 +70,18 @@
       order: 2;
       width: auto;
       margin-top: 83px;
-      text-align: left;
+      text-align: right;
       z-index: 1;
+      position: absolute;
       grid-column-start: 2;
       grid-row-start: 1;
       grid-row-end: 1;
+      right: 0;
+    }
+
+    @media (min-width: $breakpoint--xl) {
+      position: relative;
+      text-align: left;
     }
   }
 
@@ -169,6 +176,10 @@
     margin: 0 auto;
     grid-template-columns: 500px 600px;
     grid-template-rows: 450px;
+    padding: 100px 0 153px 0;
+  }
+
+  @media (min-width: $breakpoint--xl) {
     padding: 100px 143px 153px 145px;
   }
 }
