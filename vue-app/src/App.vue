@@ -15,7 +15,7 @@
 <script>
 import PrimarySection from "./components/PrimarySection.vue";
 import SecondarySection from "./components/SecondarySection.vue";
-import "./assets/scss/default.scss";
+// import "./assets/scss/default.scss";
 
 export default {
   name: "App",

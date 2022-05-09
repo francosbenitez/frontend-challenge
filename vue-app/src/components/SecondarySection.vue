@@ -29,10 +29,6 @@
 </template>
 
 <style lang="scss">
-$color__primary: #335a39;
-$color__white: #ffffff;
-$breakpoint--md: 768px;
-
 .section-secondary {
   @media (min-width: $breakpoint--md) {
     display: flex;

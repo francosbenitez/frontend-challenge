@@ -36,10 +36,6 @@ export default {
 </script>
 
 <style lang="scss">
-$color__primary: #335a39;
-$color__white: #ffffff;
-$breakpoint--md: 768px;
-
 .section-primary {
   background-color: $color__primary;
   color: $color__white;

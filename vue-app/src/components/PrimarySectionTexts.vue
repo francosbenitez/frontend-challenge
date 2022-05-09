@@ -28,9 +28,6 @@ export default {
 </script>
 
 <style lang="scss">
-$color__white: #ffffff;
-$breakpoint--md: 768px;
-
 .col-6-texts {
   @media (min-width: $breakpoint--md) {
     /* padding-left: 15px;

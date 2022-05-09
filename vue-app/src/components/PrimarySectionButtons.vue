@@ -19,9 +19,6 @@ export default {
 </script>
 
 <style lang="scss">
-$color__white: #ffffff;
-$breakpoint--md: 768px;
-
 .btn {
   position: relative;
   left: 75%;
