@@ -1,6 +1,6 @@
 <template>
   <div class="section--primary__texts">
-    <Transition name="fade">
+    <Transition>
       <div :key="title">
         <div class="section--primary__texts-wrapper">
           <h1 class="section--primary__title" v-html="title"></h1>
