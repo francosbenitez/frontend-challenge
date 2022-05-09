@@ -1,17 +1,17 @@
 @font-face {
   font-family: "Poppins Black";
-  src: url("/fonts/Poppins-Black.woff2") format("woff2"),
-    url("/fonts/Poppins-Black.woff") format("woff");
+  src: url("/../fonts/Poppins-Black.woff2") format("woff2"),
+    url("/../fonts/Poppins-Black.woff") format("woff");
 }
 
 @font-face {
   font-family: "Poppins Regular";
-  src: url("/fonts/Poppins-Regular.woff2") format("woff2"),
-    url("/fonts/Poppins-Regular.woff") format("woff");
+  src: url("/../fonts/Poppins-Regular.woff2") format("woff2"),
+    url("/../fonts/Poppins-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Poppins Bold";
-  src: url("/fonts/Poppins-Bold.woff2") format("woff2"),
-    url("/fonts/Poppins-Bold.woff") format("woff");
+  src: url("/../fonts/Poppins-Bold.woff2") format("woff2"),
+    url("/../fonts/Poppins-Bold.woff") format("woff");
 }
