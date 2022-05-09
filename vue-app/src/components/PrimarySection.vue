@@ -10,9 +10,9 @@
 </template>
 
 <script>
-import PrimarySectionImage from "./PrimarySectionImage.vue";
-import PrimarySectionButtons from "./PrimarySectionButtons.vue";
-import PrimarySectionTexts from "./PrimarySectionTexts.vue";
+import PrimarySectionImage from "@/components/PrimarySectionImage.vue";
+import PrimarySectionButtons from "@/components/PrimarySectionButtons.vue";
+import PrimarySectionTexts from "@/components/PrimarySectionTexts.vue";
 
 export default {
   components: {

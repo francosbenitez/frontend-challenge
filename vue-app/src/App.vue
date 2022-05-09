@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import PrimarySection from "./components/PrimarySection.vue";
-import SecondarySection from "./components/SecondarySection.vue";
+import PrimarySection from "@/components/PrimarySection.vue";
+import SecondarySection from "@/components/SecondarySection.vue";
 
 export default {
   name: "App",
