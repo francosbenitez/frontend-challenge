@@ -30,8 +30,9 @@ $breakpoint--md: 768px;
   @media screen and (min-width: $breakpoint--md) {
     position: absolute;
     left: 50%;
-    top: 50%;
-    /* transform: translate(-50%, -50%); */
+    top: 75%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
   }
 
   button {

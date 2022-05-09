@@ -95,5 +95,7 @@ export default {
 
 .sections-wrapper {
   min-height: 100vh;
+  /* position: relative;
+  width: 100%; */
 }
 </style>

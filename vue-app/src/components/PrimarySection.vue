@@ -46,9 +46,9 @@ $breakpoint--md: 768px;
 
   @media screen and (min-width: $breakpoint--md) {
     display: flex;
-    /* flex-wrap: wrap; */
-    margin-left: -15px;
-    margin-right: -15px;
+    flex-wrap: wrap;
+    /* margin-left: -15px;
+    margin-right: -15px; */
   }
 }
 </style>
