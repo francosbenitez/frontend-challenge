@@ -1,7 +1,7 @@
 <template>
-  <div class="btn">
-    <button class="btn--left" @click="onClickLeft"></button>
-    <button class="btn--right" @click="onClickRight"></button>
+  <div class="section--primary__btn">
+    <button class="section--primary__btn--left" @click="onClickLeft"></button>
+    <button class="section--primary__btn--right" @click="onClickRight"></button>
   </div>
 </template>
 
@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style lang="scss">
-.btn {
+.section--primary__btn {
   position: relative;
   display: inline-block;
   left: 60%;
@@ -29,7 +29,7 @@ export default {
     border: none;
   }
 
-  .btn--left {
+  .section--primary__btn--left {
     width: 50px;
     height: 50px;
     position: relative;
@@ -51,7 +51,7 @@ export default {
     }
   }
 
-  .btn--right {
+  .section--primary__btn--right {
     width: 50px;
     height: 50px;
     background-color: $color__white;
