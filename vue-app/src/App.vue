@@ -25,54 +25,36 @@ export default {
   data() {
     return {
       image: 0,
+      images: [0, 1, 2],
       title: "Crea un<br /> impacto positivo",
+      titles: [
+        "Crea un<br /> impacto positivo",
+        "Elije tu<br /> próximo destino",
+        "Encuentra<br /> la inspiración",
+      ],
       step: 0,
     };
   },
   methods: {
     receiveBtnRightAction() {
-      console.log("btn right action");
       this.step++;
+
       if (this.step > 2) {
         this.step = 0;
       }
 
-      ///////////////////////////
-      const images = [0, 1, 2];
-
-      const titles = [
-        "Crea un impacto positivo",
-        "Elije tu próximo destino",
-        "Encuentra la inspiración",
-      ];
-
-      this.image = images[this.step];
-      this.title = titles[this.step];
-      ///////////////////////////
-
-      console.log("this.step", this.step);
+      this.image = this.images[this.step];
+      this.title = this.titles[this.step];
     },
     receiveBtnLeftAction() {
-      console.log("btn left action");
       this.step--;
+
       if (this.step < 0) {
         this.step = 2;
       }
 
-      ///////////////////////////
-      const images = [0, 1, 2];
-
-      const titles = [
-        "Crea un<br /> impacto positivo",
-        "Elije tu<br /> próximo destino",
-        "Encuentra<br /> la inspiración",
-      ];
-
-      this.image = images[this.step];
-      this.title = titles[this.step];
-      ///////////////////////////
-
-      console.log("this.step", this.step);
+      this.image = this.images[this.step];
+      this.title = this.titles[this.step];
     },
   },
 };
