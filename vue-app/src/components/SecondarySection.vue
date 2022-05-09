@@ -11,14 +11,14 @@
     </div>
     <div class="section-secondary__networks">
       <div class="section-secondary--grid">
-        <img src="/assets/icons/world.svg" />
+        <img src="../assets/icons/world.svg" />
         <div>
           <h3 class="section-secondary__subtitle">Unforgettable experiences</h3>
           <p class="section-secondary__subtitle--p">
             Creating your trip is entirely collaborative and our Travel
           </p>
         </div>
-        <img src="/assets/icons/rudder.svg" />
+        <img src="../assets/icons/rudder.svg" />
         <div>
           <h3 class="section-secondary__subtitle">Unforgettable experiences</h3>
           <p class="section-secondary__subtitle--p">
@@ -95,7 +95,7 @@
       margin: 0 auto;
       width: 265px;
       height: 450px;
-      background-image: url("/assets/images/green.jpg");
+      background-image: url("../assets/images/green.jpg");
       background-position: 50%;
       background-repeat: no-repeat;
       background-size: cover;
@@ -118,7 +118,7 @@
         content: "";
         width: 350px;
         height: 269px;
-        background-image: url("/assets/images/mountains.jpg");
+        background-image: url("../assets/images/mountains.jpg");
         background-position: 50%;
         background-repeat: no-repeat;
         background-size: cover;

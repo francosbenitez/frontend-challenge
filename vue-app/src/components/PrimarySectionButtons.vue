@@ -52,7 +52,7 @@ export default {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-image: url("/assets/icons/chevron-left.svg");
+      background-image: url("../assets/icons/chevron-left.svg");
       background-repeat: no-repeat;
       background-size: contain;
       background-position: 50%;
@@ -75,7 +75,7 @@ export default {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-image: url("/assets/icons/chevron-right.svg");
+      background-image: url("../assets/icons/chevron-right.svg");
       background-repeat: no-repeat;
       background-size: contain;
       background-position: 50%;

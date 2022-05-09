@@ -11,9 +11,9 @@
         unchanged. It was pop
       </p>
       <div class="section-primary__networks">
-        <img src="/assets/icons/facebook.svg" />
-        <img src="/assets/icons/linkedin.svg" />
-        <img src="/assets/icons/twitter.svg" />
+        <img src="../assets/icons/facebook.svg" />
+        <img src="../assets/icons/linkedin.svg" />
+        <img src="../assets/icons/twitter.svg" />
       </div>
     </div>
   </div>
