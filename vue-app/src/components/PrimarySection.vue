@@ -21,7 +21,7 @@ export default {
     PrimarySectionButtons,
   },
   props: {
-    url: String,
+    url: Number,
     title: String,
   },
   methods: {

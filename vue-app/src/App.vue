@@ -24,7 +24,7 @@ export default {
   },
   data() {
     return {
-      url: "/images/cover-0.jpg",
+      url: 0,
       title: "Crea un<br /> impacto positivo",
       step: 0,
     };
@@ -38,11 +38,7 @@ export default {
       }
 
       ///////////////////////////
-      const urls = [
-        "/images/cover-0.jpg",
-        "/images/cover-1.jpg",
-        "/images/cover-2.jpg",
-      ];
+      const urls = [0, 1, 2];
 
       const titles = [
         "Crea un impacto positivo",
@@ -64,11 +60,7 @@ export default {
       }
 
       ///////////////////////////
-      const urls = [
-        "/images/cover-0.jpg",
-        "/images/cover-1.jpg",
-        "/images/cover-2.jpg",
-      ];
+      const urls = [0, 1, 2];
 
       const titles = [
         "Crea un<br /> impacto positivo",

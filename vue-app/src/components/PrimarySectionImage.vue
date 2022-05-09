@@ -4,7 +4,10 @@
       <div :key="url">
         <div
           class="hero-image"
-          :style="{ backgroundImage: 'url(' + url + ')' }"
+          :style="{
+            backgroundImage:
+              'url(' + require('../assets/images/cover-' + url + '.jpg') + ')',
+          }"
         >
           <div class="hero-image__menu">
             <div class="hero-image__wrapper">
@@ -22,7 +25,7 @@
 <script>
 export default {
   props: {
-    url: String,
+    url: Number,
   },
 };
 </script>
