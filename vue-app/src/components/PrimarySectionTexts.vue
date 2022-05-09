@@ -1,21 +1,25 @@
 <template>
   <div class="col-6-texts">
-    <div class="section-primary__text">
-      <h1 class="section-primary__title" v-html="title"></h1>
-      <hr class="section-primary__line" />
-      <p class="section-primary__description">
-        Lorem Ipsum has been the industry’s standard dummy text ever since the
-        1500s, when an unknown printer took a galley of type and scrambled it to
-        make a type specimen book. It has survived not only five centuries, but
-        also the leap into electronic typesetting, remaining essentially
-        unchanged. It was pop
-      </p>
-      <div class="section-primary__networks">
-        <img src="../assets/icons/facebook.svg" />
-        <img src="../assets/icons/linkedin.svg" />
-        <img src="../assets/icons/twitter.svg" />
+    <Transition name="fade">
+      <div :key="title">
+        <div class="section-primary__text">
+          <h1 class="section-primary__title" v-html="title"></h1>
+          <hr class="section-primary__line" />
+          <p class="section-primary__description">
+            Lorem Ipsum has been the industry’s standard dummy text ever since
+            the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only
+            five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was pop
+          </p>
+          <div class="section-primary__networks">
+            <img src="../assets/icons/facebook.svg" />
+            <img src="../assets/icons/linkedin.svg" />
+            <img src="../assets/icons/twitter.svg" />
+          </div>
+        </div>
       </div>
-    </div>
+    </Transition>
   </div>
 </template>
 
