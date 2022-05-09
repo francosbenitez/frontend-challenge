@@ -1,7 +1,7 @@
 - TO-DO: 
-  1) Round pixels decimals.
-  2) Improve the responsiveness in every important viewport.
-  3) Clean up classes names.
+  1) Improve the responsiveness in every important viewport.
+  2) Clean up classes names.
+  3) Round pixels decimals.
   4) Redirect the transition to the right side. 
   5) Reorganize styles properly. DONE
   6) Make the repository public and deploy it to GitHub Pages. DONE
