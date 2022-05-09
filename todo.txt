@@ -1,5 +1,6 @@
 - TO-DO: 
-  1) Clean up classes names.
-  2) Redirect the transition to the right side. 
-  3) Reorganize styles properly. DONE
-  4) Make the repository public and deploy it to GitHub Pages. DONE
+  1) Improve the responsiveness in every important viewport.
+  2) Clean up classes names.
+  3) Redirect the transition to the right side. 
+  4) Reorganize styles properly. DONE
+  5) Make the repository public and deploy it to GitHub Pages. DONE
