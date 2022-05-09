@@ -33,7 +33,7 @@ $color__white: #ffffff;
 $breakpoint--md: 768px;
 
 .col-6-image {
-  @media screen and (min-width: $breakpoint--md) {
+  @media (min-width: $breakpoint--md) {
     /* padding-left: 15px;
     padding-right: 15px; */
     position: relative;
@@ -51,7 +51,7 @@ $breakpoint--md: 768px;
   width: 100%;
   height: 482px;
 
-  @media screen and (min-width: $breakpoint--md) {
+  @media (min-width: $breakpoint--md) {
     height: 761px;
   }
 
@@ -64,11 +64,11 @@ $breakpoint--md: 768px;
     position: absolute;
     display: table;
 
-    @media screen and (max-width: $breakpoint--md) {
+    @media (max-width: $breakpoint--md) {
       left: 3rem;
     }
 
-    @media screen and (min-width: $breakpoint--md) {
+    @media (min-width: $breakpoint--md) {
       right: 3rem;
     }
 

@@ -30,8 +30,15 @@
 
 <style lang="scss">
 $color__primary: #335a39;
+$color__white: #ffffff;
+$breakpoint--md: 768px;
 
 .section-secondary {
+  @media (min-width: $breakpoint--md) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .section-secondary__title {
     font-family: "Poppins Black";
     font-size: 30px;
@@ -42,14 +49,33 @@ $color__primary: #335a39;
     margin: 0 auto;
     margin-top: 49px;
 
+    @media (min-width: $breakpoint--md) {
+      order: 2;
+      font-size: 71px;
+      line-height: 107px;
+      width: auto;
+      text-align: right;
+      z-index: 1;
+    }
+
     .section-secondary__title--special {
       letter-spacing: 7.4px;
       float: right;
+
+      @media (min-width: $breakpoint--md) {
+        font-size: 102px;
+        line-height: 153px;
+        letter-spacing: 75.48px;
+      }
     }
   }
 
   .section-secondary__images {
     /* text-align: center; */
+    @media (min-width: $breakpoint--md) {
+      order: 1;
+      margin: 0 0 153px 145px;
+    }
 
     .section-secondary__img {
       margin: 0 auto;
@@ -63,6 +89,13 @@ $color__primary: #335a39;
       margin-top: 38px;
       margin-bottom: 66.86px;
 
+      @media (min-width: $breakpoint--md) {
+        margin-top: 100px;
+        width: 425px;
+        height: 724px;
+        background-position: right;
+      }
+
       &:before {
         content: "";
         width: 350px;
@@ -75,6 +108,11 @@ $color__primary: #335a39;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        @media (min-width: $breakpoint--md) {
+          top: 75%;
+          left: 75%;
+        }
       }
     }
   }
@@ -82,6 +120,9 @@ $color__primary: #335a39;
   .section-secondary__networks {
     margin: 0 auto;
     width: 330px;
+    @media (min-width: $breakpoint--md) {
+      order: 3;
+    }
 
     .section-secondary--grid {
       display: grid;

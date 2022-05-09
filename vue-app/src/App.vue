@@ -15,6 +15,7 @@
 <script>
 import PrimarySection from "./components/PrimarySection.vue";
 import SecondarySection from "./components/SecondarySection.vue";
+import "./assets/scss/default.scss";
 
 export default {
   name: "App",
@@ -25,7 +26,7 @@ export default {
   data() {
     return {
       url: "/assets/images/cover-0.jpg",
-      title: "Crea un impacto positivo",
+      title: "Crea un<br /> impacto positivo",
       step: 0,
     };
   },
@@ -71,9 +72,9 @@ export default {
       ];
 
       const titles = [
-        "Crea un impacto positivo",
-        "Elije tu próximo destino",
-        "Encuentra la inspiración",
+        "Crea un<br /> impacto positivo",
+        "Elije tu<br /> próximo destino",
+        "Encuentra<br /> la inspiración",
       ];
 
       this.url = urls[this.step];

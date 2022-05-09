@@ -27,7 +27,7 @@ $breakpoint--md: 768px;
   left: 75%;
   display: inline-block;
 
-  @media screen and (min-width: $breakpoint--md) {
+  @media (min-width: $breakpoint--md) {
     position: absolute;
     left: 50%;
     top: 50%;

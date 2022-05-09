@@ -1,7 +1,7 @@
 <template>
   <div class="col-6-texts">
     <div class="section-primary__text">
-      <h1 class="section-primary__title">{{ title }}</h1>
+      <h1 class="section-primary__title" v-html="title"></h1>
       <hr class="section-primary__line" />
       <p class="section-primary__description">
         Lorem Ipsum has been the industry’s standard dummy text ever since the
@@ -32,7 +32,7 @@ $color__white: #ffffff;
 $breakpoint--md: 768px;
 
 .col-6-texts {
-  @media screen and (min-width: $breakpoint--md) {
+  @media (min-width: $breakpoint--md) {
     /* padding-left: 15px;
     padding-right: 15px; */
     position: relative;
@@ -46,12 +46,12 @@ $breakpoint--md: 768px;
 .section-primary__text {
   margin: 0 auto;
 
-  @media screen and (max-width: $breakpoint--md) {
+  @media (max-width: $breakpoint--md) {
     width: 330px;
     height: 668px;
   }
 
-  @media screen and (min-width: $breakpoint--md) {
+  @media (min-width: $breakpoint--md) {
     max-height: 441px;
     max-width: 564.35px;
     margin: 128px 96.65px 103.2px 105px;
@@ -63,6 +63,11 @@ $breakpoint--md: 768px;
     font-size: 35px;
     line-height: 53px;
     margin-bottom: 12.41px;
+
+    @media (min-width: $breakpoint--md) {
+      font-size: 60px;
+      line-height: 90px;
+    }
   }
 
   .section-primary__line {
@@ -83,7 +88,7 @@ $breakpoint--md: 768px;
       margin-right: 12px;
     }
 
-    @media screen and (min-width: $breakpoint--md) {
+    @media (min-width: $breakpoint--md) {
       margin-top: 77.75px;
     }
   }

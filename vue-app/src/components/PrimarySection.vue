@@ -44,7 +44,7 @@ $breakpoint--md: 768px;
   background-color: $color__primary;
   color: $color__white;
 
-  @media screen and (min-width: $breakpoint--md) {
+  @media (min-width: $breakpoint--md) {
     display: flex;
     flex-wrap: wrap;
     /* margin-left: -15px;
