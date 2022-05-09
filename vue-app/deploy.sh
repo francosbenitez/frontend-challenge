@@ -3,9 +3,6 @@
 # abort on errors
 set -e
 
-# access to the app folder
-cd vue-app
-
 # build
 npm run build
 
