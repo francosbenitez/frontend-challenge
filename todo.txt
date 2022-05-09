@@ -1,6 +1,6 @@
 - TO-DO: 
   1) Improve the responsiveness in every important viewport.
-  2) Clean up classes names.
+  2) Clean up classes names. DONE
   3) Round pixels decimals.
   4) Redirect the transition to the right side. 
   5) Reorganize styles properly. DONE
