@@ -1,4 +1,4 @@
 - TO-DO: 
   1) Redirect the transition to the right side. 
-  2) Reorganize styles properly.
-  3) Make the repository public and deploy it to GitHub Pages.
+  2) Reorganize styles properly. DONE
+  3) Make the repository public and deploy it to GitHub Pages. DONE
