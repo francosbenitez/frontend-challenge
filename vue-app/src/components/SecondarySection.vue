@@ -1,9 +1,11 @@
 <template>
   <section class="section-secondary">
-    <h2 class="section-secondary__title">
-      Hay un mundo<br />
-      <span class="section-secondary__title--special"> ENORME</span>
-    </h2>
+    <div class="section-secondary__title">
+      <h2>
+        Hay un mundo<br />
+        <span class="section-secondary__title--special"> ENORME</span>
+      </h2>
+    </div>
     <div class="section-secondary__images">
       <div class="section-secondary__img" />
     </div>
@@ -31,46 +33,62 @@
 <style lang="scss">
 .section-secondary {
   @media (min-width: $breakpoint--md) {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 500px;
   }
 
   .section-secondary__title {
-    font-family: "Poppins Black";
-    font-size: 30px;
-    color: $color__primary;
-    line-height: 46px;
-    height: 86px;
-    width: 330px;
-    margin: 0 auto;
-    margin-top: 49px;
-
     @media (min-width: $breakpoint--md) {
       order: 2;
-      font-size: 71px;
-      line-height: 107px;
       width: auto;
       text-align: right;
       z-index: 1;
+      margin-top: 183px;
+      margin-bottom: 60.86px;
+      grid-column-start: 2;
+      grid-row-start: 1;
+      grid-row-end: 1;
     }
 
-    .section-secondary__title--special {
-      letter-spacing: 7.4px;
-      float: right;
+    h2 {
+      font-family: "Poppins Black";
+      font-size: 30px;
+      color: $color__primary;
+      line-height: 46px;
+      height: 86px;
+      width: 330px;
+      margin: 0 auto;
+      margin-top: 49px;
 
       @media (min-width: $breakpoint--md) {
-        font-size: 102px;
-        line-height: 153px;
-        letter-spacing: 75.48px;
+        font-size: 71px;
+        line-height: 107px;
+        width: auto;
+
+        br {
+          display: none;
+        }
+      }
+
+      .section-secondary__title--special {
+        letter-spacing: 7.4px;
+        float: right;
+
+        @media (min-width: $breakpoint--md) {
+          font-size: 102px;
+          line-height: 153px;
+          letter-spacing: 75.48px;
+        }
       }
     }
   }
 
   .section-secondary__images {
-    /* text-align: center; */
     @media (min-width: $breakpoint--md) {
-      order: 1;
-      margin: 0 0 153px 145px;
+      grid-column-start: 1;
+      grid-row-start: 1;
+      grid-row-end: 2;
     }
 
     .section-secondary__img {
@@ -90,6 +108,10 @@
         width: 425px;
         height: 724px;
         background-position: right;
+        margin-bottom: 0;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
       }
 
       &:before {
@@ -117,7 +139,9 @@
     margin: 0 auto;
     width: 330px;
     @media (min-width: $breakpoint--md) {
-      order: 3;
+      grid-column-start: 2;
+      grid-row-start: 2;
+      grid-row-end: 2;
     }
 
     .section-secondary--grid {
