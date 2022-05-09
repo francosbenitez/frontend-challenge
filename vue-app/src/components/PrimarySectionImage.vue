@@ -35,8 +35,6 @@ export default {
 <style lang="scss">
 .col-6-image {
   @media (min-width: $breakpoint--md) {
-    /* padding-left: 15px;
-    padding-right: 15px; */
     position: relative;
     width: 100%;
     flex: 0 0 50%;
@@ -57,7 +55,6 @@ export default {
   }
 
   .hero-image__menu {
-    /* margin: 3rem 0 0 3rem; */
     top: 3rem;
     width: 57px;
     height: 57px;
@@ -79,7 +76,6 @@ export default {
       text-align: center;
 
       & > div {
-        /* margin-top: 6.42px; */
         margin-top: 3.21px;
       }
 

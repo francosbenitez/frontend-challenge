@@ -30,8 +30,6 @@ export default {
 <style lang="scss">
 .col-6-texts {
   @media (min-width: $breakpoint--md) {
-    /* padding-left: 15px;
-    padding-right: 15px; */
     position: relative;
     width: 100%;
     flex: 0 0 50%;
