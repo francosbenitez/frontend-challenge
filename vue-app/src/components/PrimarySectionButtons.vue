@@ -21,8 +21,8 @@ export default {
 <style lang="scss">
 .btn {
   position: relative;
-  left: 75%;
   display: inline-block;
+  left: 60%;
 
   button {
     cursor: pointer;
@@ -72,6 +72,10 @@ export default {
       background-size: contain;
       background-position: 50%;
     }
+  }
+
+  @media (min-width: $breakpoint--sm) {
+    left: 75%;
   }
 
   @media (min-width: $breakpoint--md) {
