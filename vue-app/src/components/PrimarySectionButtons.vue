@@ -1,18 +1,18 @@
 <template>
   <div class="btn">
-    <button class="btn--left" @click="onMovingToLeft"></button>
-    <button class="btn--right" @click="onMovingToRight"></button>
+    <button class="btn--left" @click="onClickLeft"></button>
+    <button class="btn--right" @click="onClickRight"></button>
   </div>
 </template>
 
 <script>
 export default {
   methods: {
-    onMovingToLeft() {
-      this.$emit("on-moving-to-left");
+    onClickLeft() {
+      this.$emit("on-click-left");
     },
-    onMovingToRight() {
-      this.$emit("on-moving-to-right");
+    onClickRight() {
+      this.$emit("on-click-right");
     },
   },
 };
@@ -23,14 +23,6 @@ export default {
   position: relative;
   left: 75%;
   display: inline-block;
-
-  @media (min-width: $breakpoint--md) {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-  }
 
   button {
     cursor: pointer;
@@ -80,6 +72,14 @@ export default {
       background-size: contain;
       background-position: 50%;
     }
+  }
+
+  @media (min-width: $breakpoint--md) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
   }
 }
 </style>

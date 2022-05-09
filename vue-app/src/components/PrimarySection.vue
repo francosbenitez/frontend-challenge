@@ -1,9 +1,9 @@
 <template>
-  <section class="section-primary">
+  <section class="section--primary">
     <PrimarySectionImage :image="image" />
     <PrimarySectionButtons
-      @on-moving-to-left="receiveBtnLeftAction"
-      @on-moving-to-right="receiveBtnRightAction"
+      @on-click-left="receiveOnClickLeft"
+      @on-click-right="receiveOnClickRight"
     />
     <PrimarySectionTexts :title="title" />
   </section>
@@ -25,18 +25,18 @@ export default {
     title: String,
   },
   methods: {
-    receiveBtnRightAction() {
-      this.$emit("on-moving-to-right");
+    receiveOnClickRight() {
+      this.$emit("on-click-right");
     },
-    receiveBtnLeftAction() {
-      this.$emit("on-moving-to-left");
+    receiveOnClickLeft() {
+      this.$emit("on-click-left");
     },
   },
 };
 </script>
 
 <style lang="scss">
-.section-primary {
+.section--primary {
   background-color: $color__primary;
   color: $color__white;
 

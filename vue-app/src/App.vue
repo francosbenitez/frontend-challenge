@@ -1,14 +1,12 @@
 <template>
   <div id="app">
-    <div class="sections-wrapper">
-      <PrimarySection
-        @on-moving-to-left="receiveBtnLeftAction"
-        @on-moving-to-right="receiveBtnRightAction"
-        :image="image"
-        :title="title"
-      />
-      <SecondarySection />
-    </div>
+    <PrimarySection
+      @on-click-left="receiveOnClickLeft"
+      @on-click-right="receiveOnClickRight"
+      :image="image"
+      :title="title"
+    />
+    <SecondarySection />
   </div>
 </template>
 
@@ -36,7 +34,7 @@ export default {
     };
   },
   methods: {
-    receiveBtnRightAction() {
+    receiveOnClickRight() {
       this.step++;
 
       if (this.step > 2) {
@@ -46,7 +44,7 @@ export default {
       this.image = this.images[this.step];
       this.title = this.titles[this.step];
     },
-    receiveBtnLeftAction() {
+    receiveOnClickLeft() {
       this.step--;
 
       if (this.step < 0) {
@@ -63,11 +61,8 @@ export default {
 <style lang="scss">
 #app {
   height: 100vh;
+  min-height: 100vh;
   position: relative;
   width: 100%;
-}
-
-.sections-wrapper {
-  min-height: 100vh;
 }
 </style>
