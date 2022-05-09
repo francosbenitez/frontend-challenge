@@ -1,12 +1,14 @@
 <template>
   <div class="col-6-image">
     <Transition name="fade">
-      <div :key="url">
+      <div :key="image">
         <div
           class="hero-image"
           :style="{
             backgroundImage:
-              'url(' + require('../assets/images/cover-' + url + '.jpg') + ')',
+              'url(' +
+              require('../assets/images/cover-' + image + '.jpg') +
+              ')',
           }"
         >
           <div class="hero-image__menu">
@@ -25,7 +27,7 @@
 <script>
 export default {
   props: {
-    url: Number,
+    image: Number,
   },
 };
 </script>

@@ -4,7 +4,7 @@
       <PrimarySection
         @on-moving-to-left="receiveBtnLeftAction"
         @on-moving-to-right="receiveBtnRightAction"
-        :url="url"
+        :image="image"
         :title="title"
       />
       <SecondarySection />
@@ -24,7 +24,7 @@ export default {
   },
   data() {
     return {
-      url: 0,
+      image: 0,
       title: "Crea un<br /> impacto positivo",
       step: 0,
     };
@@ -38,7 +38,7 @@ export default {
       }
 
       ///////////////////////////
-      const urls = [0, 1, 2];
+      const images = [0, 1, 2];
 
       const titles = [
         "Crea un impacto positivo",
@@ -46,7 +46,7 @@ export default {
         "Encuentra la inspiración",
       ];
 
-      this.url = urls[this.step];
+      this.image = images[this.step];
       this.title = titles[this.step];
       ///////////////////////////
 
@@ -60,7 +60,7 @@ export default {
       }
 
       ///////////////////////////
-      const urls = [0, 1, 2];
+      const images = [0, 1, 2];
 
       const titles = [
         "Crea un<br /> impacto positivo",
@@ -68,7 +68,7 @@ export default {
         "Encuentra<br /> la inspiración",
       ];
 
-      this.url = urls[this.step];
+      this.image = images[this.step];
       this.title = titles[this.step];
       ///////////////////////////
 

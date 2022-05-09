@@ -1,6 +1,6 @@
 <template>
   <section class="section-primary">
-    <PrimarySectionImage :url="url" />
+    <PrimarySectionImage :image="image" />
     <PrimarySectionButtons
       @on-moving-to-left="receiveBtnLeftAction"
       @on-moving-to-right="receiveBtnRightAction"
@@ -21,7 +21,7 @@ export default {
     PrimarySectionButtons,
   },
   props: {
-    url: Number,
+    image: Number,
     title: String,
   },
   methods: {
