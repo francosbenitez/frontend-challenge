@@ -43,6 +43,7 @@ export default {
   @media (min-width: $breakpoint--lg) {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
   }
 }
 </style>

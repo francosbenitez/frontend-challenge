@@ -1,6 +1,6 @@
 - TO-DO: 
-  1) Fix positioning of button in the desktop view,
-  2) Redirect the transition to the right side. 
+  1) Redirect the transition to the right side. 
+  2) Fix positioning of button in the desktop view. DONE
   3) Improve the responsiveness in every important viewport. DONE
   4) Clean up classes names. DONE
   5) Reorganize styles properly. DONE
