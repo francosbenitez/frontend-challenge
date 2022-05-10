@@ -47,13 +47,18 @@
       margin: 0 auto;
       margin-top: 49px;
 
+      @media (min-width: $breakpoint--lg) {
+        font-size: 71px;
+        line-height: 107px;
+      }
+
       .section--secondary__title--special {
         letter-spacing: 7.4px;
         float: right;
 
         @media (min-width: $breakpoint--lg) {
           font-size: 102px;
-          line-height: 153px;
+          /* line-height: 153px; */
           letter-spacing: 75.48px;
         }
       }

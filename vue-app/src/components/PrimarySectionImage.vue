@@ -99,8 +99,8 @@ export default {
   @media (min-width: $breakpoint--lg) {
     position: relative;
     width: 100%;
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 43.92%;
+    max-width: 43.92%;
     order: 2;
   }
 }

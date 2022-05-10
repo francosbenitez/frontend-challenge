@@ -51,12 +51,25 @@ export default {
       @media (min-width: $breakpoint--lg) {
         font-size: 60px;
         line-height: 90px;
+        margin-bottom: 41.41px;
       }
+
+      /* @media (min-width: $breakpoint--xxl) {
+        margin-bottom: 41.41px;
+      } */
     }
 
     .section--primary__line {
       border-top: 5px solid $color__white;
       margin-bottom: 26.59px;
+
+      @media (min-width: $breakpoint--lg) {
+        margin-bottom: 39.59px;
+      }
+
+      /* @media (min-width: $breakpoint--xxl) {
+        margin-bottom: 39.59px;
+      } */
     }
 
     .section--primary__description {
@@ -72,18 +85,19 @@ export default {
         margin-right: 12px;
       }
 
-      @media (min-width: $breakpoint--lg) {
+      @media (min-width: $breakpoint--xxl) {
         margin-top: 77.75px;
       }
     }
 
     @media (min-width: $breakpoint--lg) {
       max-height: 441px;
-      max-width: 564.35px;
-      margin: 0 96.65px 0 105px;
+      /* max-width: 564.35px;
+      margin: 0 96.65px 0 105px; */
+      width: 564.35px;
     }
 
-    @media (min-width: $breakpoint--xl) {
+    @media (min-width: $breakpoint--xxl) {
       margin: 128px 96.65px 103.2px 105px;
     }
   }
@@ -91,9 +105,17 @@ export default {
   @media (min-width: $breakpoint--lg) {
     position: relative;
     width: 100%;
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 56.08%;
+    max-width: 56.08%;
     order: 1;
+
+    & > :first-child {
+      margin: 0;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
 </style>
