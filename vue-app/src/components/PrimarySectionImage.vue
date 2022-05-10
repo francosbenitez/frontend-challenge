@@ -49,7 +49,7 @@ export default {
       position: absolute;
       display: table;
 
-      @media (max-width: $breakpoint--md) {
+      @media (max-width: $breakpoint--lg) {
         left: 3rem;
       }
 
@@ -86,17 +86,17 @@ export default {
         }
       }
 
-      @media (min-width: $breakpoint--md) {
+      @media (min-width: $breakpoint--lg) {
         right: 3rem;
       }
     }
 
-    @media (min-width: $breakpoint--md) {
-      height: 761px;
+    @media (min-width: $breakpoint--lg) {
+      height: 771px;
     }
   }
 
-  @media (min-width: $breakpoint--md) {
+  @media (min-width: $breakpoint--lg) {
     position: relative;
     width: 100%;
     flex: 0 0 50%;

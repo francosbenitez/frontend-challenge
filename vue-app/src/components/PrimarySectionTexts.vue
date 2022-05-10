@@ -36,7 +36,7 @@ export default {
   .section--primary__texts-wrapper {
     margin: 0 auto;
 
-    @media (max-width: $breakpoint--md) {
+    @media (max-width: $breakpoint--lg) {
       width: 330px;
       height: 668px;
     }
@@ -48,7 +48,7 @@ export default {
       line-height: 53px;
       margin-bottom: 12.41px;
 
-      @media (min-width: $breakpoint--md) {
+      @media (min-width: $breakpoint--lg) {
         font-size: 60px;
         line-height: 90px;
       }
@@ -72,12 +72,12 @@ export default {
         margin-right: 12px;
       }
 
-      @media (min-width: $breakpoint--md) {
+      @media (min-width: $breakpoint--lg) {
         margin-top: 77.75px;
       }
     }
 
-    @media (min-width: $breakpoint--md) {
+    @media (min-width: $breakpoint--lg) {
       max-height: 441px;
       max-width: 564.35px;
       margin: 0 96.65px 0 105px;
@@ -88,7 +88,7 @@ export default {
     }
   }
 
-  @media (min-width: $breakpoint--md) {
+  @media (min-width: $breakpoint--lg) {
     position: relative;
     width: 100%;
     flex: 0 0 50%;

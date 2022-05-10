@@ -40,7 +40,7 @@ export default {
   background-color: $color__primary;
   color: $color__white;
 
-  @media (min-width: $breakpoint--md) {
+  @media (min-width: $breakpoint--lg) {
     display: flex;
     flex-wrap: wrap;
   }

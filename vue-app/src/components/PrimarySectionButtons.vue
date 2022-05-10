@@ -78,7 +78,7 @@ export default {
     left: 75%;
   }
 
-  @media (min-width: $breakpoint--md) {
+  @media (min-width: $breakpoint--lg) {
     position: absolute;
     left: 50%;
     top: 50%;
