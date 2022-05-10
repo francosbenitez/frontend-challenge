@@ -85,7 +85,7 @@ export default {
         margin-right: 12px;
       }
 
-      @media (min-width: $breakpoint--xxl) {
+      @media (min-width: $breakpoint--lg) {
         margin-top: 77.75px;
       }
     }
@@ -97,9 +97,9 @@ export default {
       width: 564.35px;
     }
 
-    @media (min-width: $breakpoint--xxl) {
+    /* @media (min-width: $breakpoint--xxl) {
       margin: 128px 96.65px 103.2px 105px;
-    }
+    } */
   }
 
   @media (min-width: $breakpoint--lg) {

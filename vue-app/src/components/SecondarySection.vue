@@ -12,22 +12,14 @@
     <div class="section--secondary__networks">
       <div class="section--secondary__networks-grid">
         <img src="../assets/icons/world.svg" />
-        <div>
-          <h3 class="section--secondary__subtitle-1">
-            Unforgettable experiences
-          </h3>
-          <p class="section--secondary__subtitle-2">
-            Creating your trip is entirely collaborative and our Travel
-          </p>
+        <div class="section--secondary__subtitle">
+          <h3>Unforgettable experiences</h3>
+          <p>Creating your trip is entirely collaborative and our Travel</p>
         </div>
         <img src="../assets/icons/rudder.svg" />
-        <div>
-          <h3 class="section--secondary__subtitle-1">
-            Unforgettable experiences
-          </h3>
-          <p class="section--secondary__subtitle-2">
-            Creating your trip is entirely collaborative and our Travel
-          </p>
+        <div class="section--secondary__subtitle">
+          <h3>Unforgettable experiences</h3>
+          <p>Creating your trip is entirely collaborative and our Travel</p>
         </div>
       </div>
     </div>
@@ -151,21 +143,27 @@
       grid-template-columns: 81.2px 256px;
       padding-bottom: 55px;
 
-      .section--secondary__subtitle-1 {
-        line-height: 45px;
-        font-family: "Poppins Bold";
-        font-size: 18px;
-        color: $color__primary;
-        margin-top: 13.14px;
-        margin-bottom: 10px;
+      & > div:nth-of-type(1) {
+        margin-bottom: 40px;
       }
 
-      .section--secondary__subtitle-2 {
-        line-height: 32px;
-        font-family: "Poppins Regular";
-        font-size: 16px;
-        color: $color__primary;
-        margin: 0;
+      .section--secondary__subtitle {
+        h3 {
+          line-height: 45px;
+          font-family: "Poppins Bold";
+          font-size: 18px;
+          color: $color__primary;
+          margin-top: 13.14px;
+          margin-bottom: 10px;
+        }
+
+        p {
+          line-height: 32px;
+          font-family: "Poppins Regular";
+          font-size: 16px;
+          color: $color__primary;
+          margin: 0;
+        }
       }
     }
 
@@ -174,7 +172,7 @@
       grid-row-start: 2;
       grid-row-end: 2;
       right: 0;
-      bottom: 20%;
+      bottom: 25%;
       position: relative;
     }
   }
