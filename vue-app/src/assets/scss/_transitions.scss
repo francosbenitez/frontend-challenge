@@ -1,11 +1,36 @@
-.v-enter-active,
-.v-leave-active {
+// Images
+.fade__images-enter-active,
+.fade__images-leave-active {
   transition: opacity 0.8s ease-out;
 }
-.v-enter,
-.v-leave-to {
+.fade__images-enter,
+.fade__images-leave-to {
   opacity: 0;
 }
-.v-leave-active {
+
+.fade__images-enter-active {
   position: absolute;
+  top: 0;
+  right: 0;
+}
+
+// Texts
+.fade__texts-enter-active,
+.fade__texts-leave-active {
+  transition: opacity 0.8s ease-out;
+}
+.fade__texts-enter,
+.fade__texts-leave-to {
+  opacity: 0;
+}
+
+.fade__texts-enter-active {
+  position: absolute;
+
+  @media (min-width: $breakpoint--lg) {
+    margin: 0;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
