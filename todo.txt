@@ -1,5 +1,5 @@
 - TO-DO: 
-  1) Set up the initial transitions. 
+  1) Set up the initial transitions for the texts and images components.
   2) Redirect the transition to the left side based on conditions.
   3) Redirect the transition to the right side. DONE
   4) Fix positioning of button in the desktop view. DONE
