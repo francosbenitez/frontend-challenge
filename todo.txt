@@ -1,7 +1,8 @@
 - TO-DO: 
-  1) Redirect the transition to the right side. 
-  2) Fix positioning of button in the desktop view. DONE
-  3) Improve the responsiveness in every important viewport. DONE
-  4) Clean up classes names. DONE
-  5) Reorganize styles properly. DONE
-  6) Make the repository public and deploy it to GitHub Pages. DONE
+  1) Set up the initial transitions. 
+  2) Redirect the transition to the right side. 
+  3) Fix positioning of button in the desktop view. DONE
+  4) Improve the responsiveness in every important viewport. DONE
+  5) Clean up classes names. DONE
+  6) Reorganize styles properly. DONE
+  7) Make the repository public and deploy it to GitHub Pages. DONE
