@@ -53,10 +53,6 @@ export default {
         line-height: 90px;
         margin-bottom: 41.41px;
       }
-
-      /* @media (min-width: $breakpoint--xxl) {
-        margin-bottom: 41.41px;
-      } */
     }
 
     .section--primary__line {
@@ -66,10 +62,6 @@ export default {
       @media (min-width: $breakpoint--lg) {
         margin-bottom: 39.59px;
       }
-
-      /* @media (min-width: $breakpoint--xxl) {
-        margin-bottom: 39.59px;
-      } */
     }
 
     .section--primary__description {
@@ -92,14 +84,8 @@ export default {
 
     @media (min-width: $breakpoint--lg) {
       max-height: 441px;
-      /* max-width: 564.35px;
-      margin: 0 96.65px 0 105px; */
       width: 564.35px;
     }
-
-    /* @media (min-width: $breakpoint--xxl) {
-      margin: 128px 96.65px 103.2px 105px;
-    } */
   }
 
   @media (min-width: $breakpoint--lg) {

@@ -80,7 +80,6 @@ export default {
 
   @media (min-width: $breakpoint--lg) {
     position: absolute;
-    /* left: 50%; */
     left: 56%;
     top: 50%;
     transform: translate(-50%, -50%);

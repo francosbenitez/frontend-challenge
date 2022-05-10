@@ -50,7 +50,6 @@
 
         @media (min-width: $breakpoint--lg) {
           font-size: 102px;
-          /* line-height: 153px; */
           letter-spacing: 75.48px;
         }
       }
