@@ -87,10 +87,23 @@
 .fade__texts-enter-active {
   position: absolute;
 
+  @media (max-width: $breakpoint--lg) {
+    bottom: 0;
+    width: 100%;
+    -webkit-animation: slide-in-left 0.8s ease-out both;
+    animation: slide-in-left 0.8s ease-out both;
+  }
+
   @media (min-width: $breakpoint--lg) {
-    margin: 0;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+}
+
+.fade__texts-leave-active {
+  @media (max-width: $breakpoint--lg) {
+    -webkit-animation: slide-out-right 0.8s ease-out both;
+    animation: slide-out-right 0.8s ease-out both;
   }
 }
