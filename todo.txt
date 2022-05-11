@@ -1,5 +1,6 @@
 - TO-DO: 
   - Set up the initial transitions for the texts and images components.
+  - Add a limit of clicking on changing transitions. DONE
   - Redirect the transition to the left side based on conditions. DONE
   - Fix the texts transition in the MB version. DONE
   - Redirect the transition to the right side. DONE

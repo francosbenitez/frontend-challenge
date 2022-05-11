@@ -1,17 +1,42 @@
 <template>
   <div class="section--primary__btn">
-    <button class="section--primary__btn--left" @click="onClickLeft"></button>
-    <button class="section--primary__btn--right" @click="onClickRight"></button>
+    <button
+      class="section--primary__btn--left"
+      :disabled="isTransitionHappening"
+      @click="onClickLeft"
+    ></button>
+    <button
+      class="section--primary__btn--right"
+      :disabled="isTransitionHappening"
+      @click="onClickRight"
+    ></button>
   </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      isTransitionHappening: false,
+    };
+  },
   methods: {
     onClickLeft() {
+      this.isTransitionHappening = true;
+
+      setTimeout(() => {
+        this.isTransitionHappening = false;
+      }, 800);
+
       this.$emit("on-click-left");
     },
     onClickRight() {
+      this.isTransitionHappening = true;
+
+      setTimeout(() => {
+        this.isTransitionHappening = false;
+      }, 800);
+
       this.$emit("on-click-right");
     },
   },
