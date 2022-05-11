@@ -29,18 +29,52 @@ export default {
     PrimarySectionTexts,
     PrimarySectionButtons,
   },
-  props: {
-    image: Number,
-    title: String,
-    slideRight: Boolean,
-    slideLeft: Boolean,
+  data() {
+    return {
+      image: 0,
+      images: [0, 1, 2],
+      title: "Crea un<br /> impacto positivo",
+      titles: [
+        "Crea un<br /> impacto positivo",
+        "Elije tu<br /> próximo destino",
+        "Encuentra<br /> la inspiración",
+      ],
+      step: 0,
+      slideRight: false,
+      slideLeft: false,
+    };
+  },
+  watch: {
+    image: function (newValue, prevValue) {
+      if (newValue > prevValue || (newValue === 0 && prevValue === 2)) {
+        this.slideRight = true;
+        this.slideLeft = false;
+      } else {
+        this.slideRight = false;
+        this.slideLeft = true;
+      }
+    },
   },
   methods: {
     receiveOnClickRight() {
-      this.$emit("on-click-right");
+      this.step++;
+
+      if (this.step > 2) {
+        this.step = 0;
+      }
+
+      this.image = this.images[this.step];
+      this.title = this.titles[this.step];
     },
     receiveOnClickLeft() {
-      this.$emit("on-click-left");
+      this.step--;
+
+      if (this.step < 0) {
+        this.step = 2;
+      }
+
+      this.image = this.images[this.step];
+      this.title = this.titles[this.step];
     },
   },
 };
