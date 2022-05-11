@@ -35,6 +35,10 @@ export default {
     position: relative;
     background-color: $color__white;
     padding: 13.04px 18px 15.05px 18.07px;
+    -webkit-animation: slide-in-bottom 0.8s ease-out both;
+    animation: slide-in-bottom 0.8s ease-out both;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
 
     &:before {
       width: 13.29px;
@@ -58,6 +62,10 @@ export default {
     position: relative;
     bottom: 50px;
     padding: 13.04px 18px 15.05px 18.07px;
+    -webkit-animation: slide-in-bottom 0.8s ease-out both;
+    animation: slide-in-bottom 0.8s ease-out both;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
 
     &:before {
       width: 13.29px;

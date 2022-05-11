@@ -47,6 +47,10 @@ export default {
       font-size: 35px;
       line-height: 53px;
       margin-bottom: 12.41px;
+      -webkit-animation: slide-in-bottom 0.8s ease-out both;
+      animation: slide-in-bottom 0.8s ease-out both;
+      -webkit-animation-delay: 0.1s;
+      animation-delay: 0.1s;
 
       @media (min-width: $breakpoint--lg) {
         font-size: 60px;
@@ -58,6 +62,10 @@ export default {
     .section--primary__line {
       border-top: 5px solid $color__white;
       margin-bottom: 26.59px;
+      -webkit-animation: slide-in-bottom 0.8s ease-out both;
+      animation: slide-in-bottom 0.8s ease-out both;
+      -webkit-animation-delay: 0.15s;
+      animation-delay: 0.15s;
 
       @media (min-width: $breakpoint--lg) {
         margin-bottom: 39.59px;
@@ -68,10 +76,18 @@ export default {
       font-family: "Poppins Regular";
       font-size: 16px;
       line-height: 45px;
+      -webkit-animation: slide-in-bottom 0.8s ease-out both;
+      animation: slide-in-bottom 0.8s ease-out both;
+      -webkit-animation-delay: 0.2s;
+      animation-delay: 0.2s;
     }
 
     .section--primary__networks {
       margin-top: 33.75px;
+      -webkit-animation: slide-in-bottom 0.8s ease-out both;
+      animation: slide-in-bottom 0.8s ease-out both;
+      -webkit-animation-delay: 0.25s;
+      animation-delay: 0.25s;
 
       img {
         margin-right: 12px;

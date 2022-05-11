@@ -40,6 +40,10 @@ export default {
     background-size: cover;
     width: 100%;
     height: 482px;
+    -webkit-animation: scale-in-br 0.8s ease-out both;
+    animation: scale-in-br 0.8s ease-out both;
+    -webkit-animation-delay: 0.05s;
+    animation-delay: 0.05s;
 
     .section--primary__menu {
       top: 3rem;
@@ -48,6 +52,10 @@ export default {
       background-color: $color__primary;
       position: absolute;
       display: table;
+      -webkit-animation: slide-in-right 0.8s ease-out both;
+      animation: slide-in-right 0.8s ease-out both;
+      -webkit-animation-delay: 0.25s;
+      animation-delay: 0.25s;
 
       @media (max-width: $breakpoint--lg) {
         left: 3rem;
