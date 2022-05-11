@@ -1,7 +1,7 @@
 - TO-DO: 
-  - Fix the texts transition in the MB version.
   - Set up the initial transitions for the texts and images components.
-  - Redirect the transition to the left side based on conditions.
+  - Redirect the transition to the left side based on conditions. DONE
+  - Fix the texts transition in the MB version. DONE
   - Redirect the transition to the right side. DONE
   - Fix positioning of button in the desktop view. DONE
   - Improve the responsiveness in every important viewport. DONE
