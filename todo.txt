@@ -1,4 +1,5 @@
 - TO-DO: 
+  - Pass the functionality from App.vue to PrimarySection.vue.
   - Set up the initial transitions for the texts and images components.
   - Add a limit of clicking on changing transitions. DONE
   - Redirect the transition to the left side based on conditions. DONE

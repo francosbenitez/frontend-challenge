@@ -5,6 +5,8 @@
       @on-click-right="receiveOnClickRight"
       :image="image"
       :title="title"
+      :slideRight="slideRight"
+      :slideLeft="slideLeft"
     />
     <SecondarySection />
   </div>
@@ -31,7 +33,20 @@ export default {
         "Encuentra<br /> la inspiración",
       ],
       step: 0,
+      slideRight: false,
+      slideLeft: false,
     };
+  },
+  watch: {
+    image: function (newValue, prevValue) {
+      if (newValue > prevValue || (newValue === 0 && prevValue === 2)) {
+        this.slideRight = true;
+        this.slideLeft = false;
+      } else {
+        this.slideRight = false;
+        this.slideLeft = true;
+      }
+    },
   },
   methods: {
     receiveOnClickRight() {

@@ -1,10 +1,5 @@
 <template>
-  <div
-    class="section--primary__images"
-    :class="{
-      'section--primary__images--initial-animation': !slideRight && !slideLeft,
-    }"
-  >
+  <div class="section--primary__images">
     <Transition :name="transitionName">
       <div :key="image">
         <div
@@ -33,12 +28,8 @@
 export default {
   props: {
     image: Number,
-  },
-  data() {
-    return {
-      slideRight: false,
-      slideLeft: false,
-    };
+    slideRight: Boolean,
+    slideLeft: Boolean,
   },
   computed: {
     transitionName() {
@@ -47,17 +38,6 @@ export default {
         : this.slideLeft
         ? "section--primary__image-transition--left"
         : "";
-    },
-  },
-  watch: {
-    image: function (newValue, prevValue) {
-      if (newValue > prevValue || (newValue === 0 && prevValue === 2)) {
-        this.slideRight = true;
-        this.slideLeft = false;
-      } else {
-        this.slideRight = false;
-        this.slideLeft = true;
-      }
     },
   },
 };
@@ -133,22 +113,6 @@ export default {
     flex: 0 0 43.92%;
     max-width: 43.92%;
     order: 2;
-  }
-}
-
-.section--primary__images--initial-animation {
-  .section--primary__image-background {
-    -webkit-animation: scale-in-br 0.8s ease-out both;
-    animation: scale-in-br 0.8s ease-out both;
-    -webkit-animation-delay: 0.05s;
-    animation-delay: 0.05s;
-  }
-
-  .section--primary__menu {
-    -webkit-animation: slide-in-right 0.8s ease-out both;
-    animation: slide-in-right 0.8s ease-out both;
-    -webkit-animation-delay: 0.25s;
-    animation-delay: 0.25s;
   }
 }
 </style>
