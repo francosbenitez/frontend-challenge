@@ -1,23 +1,6 @@
+@import "mixins";
+
 // Images
-@mixin image-transition {
-  &-enter-active,
-  &-leave-active {
-    transition: opacity 0.8s ease-out;
-  }
-
-  &-enter,
-  &-leave-to {
-    opacity: 0;
-  }
-
-  &-enter-active {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-  }
-}
-
 .section--primary__image-transition--right {
   @include image-transition;
 
