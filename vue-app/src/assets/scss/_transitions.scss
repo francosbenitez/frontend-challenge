@@ -1,59 +1,63 @@
-// Images
-.fade__images-enter-active,
-.fade__images-leave-active {
-  transition: opacity 0.8s ease-out;
-}
-.fade__images-enter,
-.fade__images-leave-to {
-  opacity: 0;
-}
+.fade__images {
+  &-enter-active,
+  &-leave-active {
+    transition: opacity 0.8s ease-out;
+  }
 
-.fade__images-enter-active {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-}
+  &-enter,
+  &-leave-to {
+    opacity: 0;
+  }
 
-.fade__images-enter-active {
-  -webkit-animation: slide-in-left 0.8s ease-out both;
-  animation: slide-in-left 0.8s ease-out both;
-}
-.fade__images-leave-active {
-  -webkit-animation: slide-out-right 0.8s ease-out both;
-  animation: slide-out-right 0.8s ease-out both;
-}
-
-// Texts
-.fade__texts-enter-active,
-.fade__texts-leave-active {
-  transition: opacity 0.8s ease-out;
-}
-.fade__texts-enter,
-.fade__texts-leave-to {
-  opacity: 0;
-}
-
-.fade__texts-enter-active {
-  position: absolute;
-
-  @media (max-width: $breakpoint--lg) {
-    bottom: 0;
+  &-enter-active {
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 100%;
+  }
+
+  &-enter-active {
     -webkit-animation: slide-in-left 0.8s ease-out both;
     animation: slide-in-left 0.8s ease-out both;
   }
 
-  @media (min-width: $breakpoint--lg) {
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  &-leave-active {
+    -webkit-animation: slide-out-right 0.8s ease-out both;
+    animation: slide-out-right 0.8s ease-out both;
   }
 }
 
-.fade__texts-leave-active {
-  @media (max-width: $breakpoint--lg) {
-    -webkit-animation: slide-out-right 0.8s ease-out both;
-    animation: slide-out-right 0.8s ease-out both;
+.fade__texts {
+  &-enter-active,
+  &-leave-active {
+    transition: opacity 0.8s ease-out;
+  }
+  &-enter,
+  &-leave-to {
+    opacity: 0;
+  }
+
+  &-enter-active {
+    position: absolute;
+
+    @media (max-width: $breakpoint--lg) {
+      bottom: 0;
+      width: 100%;
+      -webkit-animation: slide-in-left 0.8s ease-out both;
+      animation: slide-in-left 0.8s ease-out both;
+    }
+
+    @media (min-width: $breakpoint--lg) {
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &-leave-active {
+    @media (max-width: $breakpoint--lg) {
+      -webkit-animation: slide-out-right 0.8s ease-out both;
+      animation: slide-out-right 0.8s ease-out both;
+    }
   }
 }
