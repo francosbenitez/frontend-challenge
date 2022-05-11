@@ -33,6 +33,8 @@ export default {
 
 <style lang="scss">
 .section--primary__texts {
+  position: relative;
+
   .section--primary__texts-wrapper {
     margin: 0 auto;
 
