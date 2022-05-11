@@ -1,6 +1,6 @@
 <template>
   <div class="section--primary__texts">
-    <Transition name="section--primary__text-transition">
+    <Transition :name="transitionName">
       <div :key="title">
         <div class="section--primary__texts-wrapper">
           <h1 class="section--primary__title" v-html="title"></h1>
@@ -27,6 +27,17 @@
 export default {
   props: {
     title: String,
+    slideRight: Boolean,
+    slideLeft: Boolean,
+  },
+  computed: {
+    transitionName() {
+      return this.slideRight
+        ? "section--primary__text-transition--right"
+        : this.slideLeft
+        ? "section--primary__text-transition--left"
+        : "";
+    },
   },
 };
 </script>

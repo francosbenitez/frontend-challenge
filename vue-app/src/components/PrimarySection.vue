@@ -14,7 +14,11 @@
       @on-click-left="receiveOnClickLeft"
       @on-click-right="receiveOnClickRight"
     />
-    <PrimarySectionTexts :title="title" />
+    <PrimarySectionTexts
+      :title="title"
+      :slideLeft="slideLeft"
+      :slideRight="slideRight"
+    />
   </section>
 </template>
 
