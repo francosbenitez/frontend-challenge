@@ -1,6 +1,6 @@
 <template>
   <div class="section--primary__images">
-    <Transition name="fade__images">
+    <Transition name="section--primary__image-transition">
       <div :key="image">
         <div
           class="section--primary__image-background"
