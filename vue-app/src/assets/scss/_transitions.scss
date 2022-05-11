@@ -1,5 +1,5 @@
 // Images
-.section--primary__image-transition {
+@mixin image-transition {
   &-enter-active,
   &-leave-active {
     transition: opacity 0.8s ease-out;
@@ -16,6 +16,10 @@
     right: 0;
     width: 100%;
   }
+}
+
+.section--primary__image-transition--right {
+  @include image-transition;
 
   &-enter-active {
     -webkit-animation: slide-in-left 0.8s ease-out both;
@@ -25,6 +29,20 @@
   &-leave-active {
     -webkit-animation: slide-out-right 0.8s ease-out both;
     animation: slide-out-right 0.8s ease-out both;
+  }
+}
+
+.section--primary__image-transition--left {
+  @include image-transition;
+
+  &-enter-active {
+    -webkit-animation: slide-in-right 0.8s ease-out both;
+    animation: slide-in-right 0.8s ease-out both;
+  }
+
+  &-leave-active {
+    -webkit-animation: slide-out-left 0.8s ease-out both;
+    animation: slide-out-left 0.8s ease-out both;
   }
 }
 

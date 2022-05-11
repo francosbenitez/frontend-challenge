@@ -1,6 +1,6 @@
 <template>
   <div class="section--primary__images">
-    <Transition name="section--primary__image-transition">
+    <Transition :name="transitionName">
       <div :key="image">
         <div
           class="section--primary__image-background"
@@ -28,6 +28,32 @@
 export default {
   props: {
     image: Number,
+  },
+  data() {
+    return {
+      slideRight: false,
+      slideLeft: false,
+    };
+  },
+  computed: {
+    transitionName() {
+      return this.slideRight
+        ? "section--primary__image-transition--right"
+        : this.slideLeft
+        ? "section--primary__image-transition--left"
+        : "";
+    },
+  },
+  watch: {
+    image: function (newValue, prevValue) {
+      if (newValue > prevValue || (newValue === 0 && prevValue === 2)) {
+        this.slideRight = true;
+        this.slideLeft = false;
+      } else {
+        this.slideRight = false;
+        this.slideLeft = true;
+      }
+    },
   },
 };
 </script>
