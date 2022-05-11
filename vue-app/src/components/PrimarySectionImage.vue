@@ -1,5 +1,10 @@
 <template>
-  <div class="section--primary__images">
+  <div
+    class="section--primary__images"
+    :class="{
+      'section--primary__images--initial-animation': !slideRight && !slideLeft,
+    }"
+  >
     <Transition :name="transitionName">
       <div :key="image">
         <div
@@ -128,6 +133,22 @@ export default {
     flex: 0 0 43.92%;
     max-width: 43.92%;
     order: 2;
+  }
+}
+
+.section--primary__images--initial-animation {
+  .section--primary__image-background {
+    -webkit-animation: scale-in-br 0.8s ease-out both;
+    animation: scale-in-br 0.8s ease-out both;
+    -webkit-animation-delay: 0.05s;
+    animation-delay: 0.05s;
+  }
+
+  .section--primary__menu {
+    -webkit-animation: slide-in-right 0.8s ease-out both;
+    animation: slide-in-right 0.8s ease-out both;
+    -webkit-animation-delay: 0.25s;
+    animation-delay: 0.25s;
   }
 }
 </style>
